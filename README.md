@@ -1,1 +1,1 @@
-# layout_landing__WhatsApp_Bot
+Landing WhatsApp_Bot робився на замовлення був сворений самостійно приблизно за півтора дня.
