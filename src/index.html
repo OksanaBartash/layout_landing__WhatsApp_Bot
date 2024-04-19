@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--"Favicon"-->
+        <link rel="shortcut icon" sizes="32x32" href="images/logo/favicon_32x32.svg" />
+        <link rel="apple-touch-icon-precomposed" sizes="16x16" href="images/logo/favicon_16x16.svg" />
+
+        <title>PXL digital agency</title>
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
+    </head>
+
+    <body>
+        <canvas id="background"></canvas>
+        <header class="header">
+            <div class="container">
+                <a href="" class="logo"><img src="images/logo/logo_pxl.svg" alt="" /></a>
+                <ul class="menu">
+                    <li><a href="#packages-section">Пакети</a></li>
+                    <li><a href="#portfolio-section">Портфоліо</a></li>
+                    <li><a href="#contacts-section">Контакти</a></li>
+                </ul>
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                            <a href="#intro-section">
+                                <li>Головна</li>
+                            </a>
+                            <a href="#about-us-section">
+                                <li>Наші переваги</li>
+                            </a>
+                            <a href="#stages-section">
+                                <li>Етапи розробки</li>
+                            </a>
+                            <a href="#packages-section">
+                                <li>Пакети</li>
+                            </a>
+                            <a href="#portfolio-section">
+                                <li>Портфоліо</li>
+                            </a>
+                            <a href="#questions-section">
+                                <li>Найчастіші запитання</li>
+                            </a>
+                            <a href="#contacts">
+                                <li>Контакти</li>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="swiper main-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div id="intro-section">
+                        <div class="container">
+                            <h1>
+                                Розробка сайтів для
+                                <br />
+                                вашого бізнесу
+                            </h1>
+                            <p>Ваша ідея, наше втілення - ми створюємо цифрові враження!</p>
+                            <button class="button-order">
+                                Замовити проєкт
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="about-us-section">
+                        <div class="container">
+                            <h2>Чому обирають нас</h2>
+                            <div class="wrapper">
+                                <div class="card">
+                                    <img src="images/about-us/experience_icon_50x50.svg" alt="experience_icon" />
+                                    <h4>Професійність і Досвід</h4>
+                                    <p>
+                                        Наша команда висококваліфіковані та досвідчені фахівці у галузі розробки веб-сайтів, що гарантує вам високу
+                                        якість та успішні результати.
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <img src="images/about-us/personal_icon_50x50.svg" alt="personal_icon" />
+                                    <h4>Індивідуальний Підхід</h4>
+                                    <p>
+                                        Ми пропонуємо персоналізований підхід до кожного клієнта, слухаючи їхні потреби та працюючи на досягнення
+                                        унікальних цілей кожного проекту.
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <img src="images/about-us/technology_icon_50x50.svg" alt="technology_icon" />
+                                    <h4>Сучасні Технології та Тренди</h4>
+                                    <p>
+                                        Застосовуємо передові технології та інструменти для створення сучасних та ефективних веб-рішень, які
+                                        відповідають останнім трендам у галузі.
+                                    </p>
+                                </div>
+                                <div class="card partners">
+                                    <img src="images/about-us/partners_icon_50x50.svg" alt="partners_icon" />
+                                    <h4>Стратегічне Партнерство</h4>
+                                    <p>
+                                        Ми не лише виконавці, але й стратегічні партнери, готові співпрацювати з вами для досягнення спільних успіхів
+                                        у розвитку вашого бізнесу.
+                                    </p>
+                                </div>
+                                <div class="card">
+                                    <img src="images/about-us/support_icon_50x50.svg" alt="support_icon" />
+                                    <h4>Система Підтримки та Гнучкість</h4>
+                                    <p>
+                                        Надаємо надійну підтримку на кожному етапі проєкту і після його завершення, гарантуючи гнучкість у внесенні
+                                        змін та досягненні ваших цілей.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="stages-section">
+                        <div class="container">
+                            <h2>Етапи розробки</h2>
+                            <div class="swiper stagesSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide-1">
+                                        <div class="text-in-hexagon">
+                                            <p>
+                                                Брифінг з
+                                                <br />
+                                                замовником
+                                            </p>
+                                        </div>
+                                        <div class="text-under-hexagon">
+                                            <p>Зв'язок із клієнтом, вивчення потреб та обговорення завдання.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide slide-2">
+                                        <div class="text-in-hexagon">
+                                            <p>Дизайн</p>
+                                        </div>
+                                        <div class="text-under-hexagon">
+                                            <p>Розробка концепції, включаючи інтерфейс та елементи дизайну. (Прев‘ю макети)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide slide-3">
+                                        <div class="text-in-hexagon">
+                                            <p>
+                                                Погодження
+                                                <br />
+                                                проєкту
+                                            </p>
+                                        </div>
+                                        <div class="text-under-hexagon">
+                                            <p>Фінальне схвалення замовником, переконуємось, що всі вимоги враховані.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide slide-4">
+                                        <div class="text-in-hexagon">
+                                            <p>
+                                                Розробка
+                                                <br />
+                                                проєкту
+                                            </p>
+                                        </div>
+                                        <div class="text-under-hexagon">
+                                            <p>Реалізація проєкту відповідно до вимог та затвердженого дизайну.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide slide-5">
+                                        <div class="text-in-hexagon">
+                                            <p>Тестування</p>
+                                        </div>
+                                        <div class="text-under-hexagon">
+                                            <p>Контроль якості, виявлення та виправлення будь-яких помилок.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide slide-6">
+                                        <div class="text-in-hexagon">
+                                            <p>Продакшн</p>
+                                        </div>
+                                        <div class="text-under-hexagon">
+                                            <p>Запуск проєкту на хостингу з можливістю доступу для ваших клієнтів.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="packages-section">
+                        <div class="container">
+                            <h2>Пакети</h2>
+                            <div class="swiper packages-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <h3>Лендінг</h3>
+                                            <p>
+                                                Лендінг пейдж - односторінковий вебсайт, створений для конкретної маркетингової мети. Він зосереджений
+                                                на одній акції, продукті чи пропозиції.
+                                            </p>
+                                            <p>Переваги:</p>
+                                            <ul>
+                                                <li>Одна сторінка з конкретною ціллю.</li>
+                                                <li>Сильний акцент на переконливі заклики до дії.</li>
+                                                <li>Відсутність складної навігації чи багатьох розділів.</li>
+                                            </ul>
+                                            <p class="price">від $ 315</p>
+                                            <button class="button-order card-button">
+                                                Замовити проєкт
+                                                <span></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card card-center">
+                                            <h3>Сайт візитка</h3>
+                                            <p>
+                                                Сайт візитка - невеликий веб-сайт, відображає інформацію про фірму, фахівця чи організацію, надаючи
+                                                основні контактні дані та опис послуг чи продукції.
+                                            </p>
+                                            <p>Переваги:</p>
+                                            <ul>
+                                                <li>Кілька сторінок з базовою інформацією.</li>
+                                                <li>Простий у навігації та дизайні.</li>
+                                                <li>Зазвичай не включає функціонал електронної комерції.</li>
+                                            </ul>
+                                            <p class="price">від $ 475</p>
+                                            <button class="button-order card-button">
+                                                Замовити проєкт
+                                                <span></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <h3>Магазин</h3>
+                                            <p>
+                                                Магазин - онлайн-платформа, де користувачі можуть переглядати, вибирати та купувати товари чи послуги
+                                                , а також здійснювати оплату.
+                                            </p>
+                                            <p>Переваги:</p>
+                                            <ul>
+                                                <li>Розширений каталог товарів чи послуг.</li>
+                                                <li>Функціонал кошика для покупок та різні способи оплати.</li>
+                                                <li>Складніша структура та функціональність для електронної комерції.</li>
+                                            </ul>
+                                            <p class="price">від $1320</p>
+                                            <button class="button-order card-button">
+                                                Замовити проєкт
+                                                <span></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination packages-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="portfolio-section">
+                        <div class="container">
+                            <h2>Портфоліо</h2>
+                            <div class="swiper portfolioSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="mockup_1"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mockup_2"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="mockup_3"></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination portfolioSwiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="questions-section">
+                        <div class="container">
+                            <h2>Найчастіші запитання</h2>
+                            <div class="wrapper" id="box">
+                                <!------------------------------>
+                                <div class="item">
+                                    <div class="question-block">
+                                        <a href="#popup-1" class="box-button">
+                                            <div class="three-circles">
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                            </div>
+                                            <p class="text-questions">Яка вартість розробки вебсайту?</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="answer-block" id="popup-1">
+                                        <div class="popup-content">
+                                            <a href="#questions-section" class="popup-close">
+                                                <img src="./images/questions/toClose.webp" alt="It is close-button" />
+                                            </a>
+                                            <div class="popup-title">
+                                                <p>Яка вартість розробки вебсайту?</p>
+                                            </div>
+                                            <div class="popup-text">
+                                                <p>
+                                                    <i>
+                                                        Вартість залежить від різних факторів, таких як тип вебсайту, дизайн, функціональність та
+                                                        додаткові послуги. Ми можемо надати вам детальний кошторис після обговорення вашого проекту.
+                                                    </i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------>
+                                <div class="item">
+                                    <div class="question-block">
+                                        <a href="#popup-2" class="box-button">
+                                            <div class="three-circles">
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                            </div>
+                                            <p class="text-questions">Чи надаєте ви послуги підтримки та обслуговування після запуску сайту?</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="answer-block" id="popup-2">
+                                        <div class="popup-content">
+                                            <a href="#questions-section" class="popup-close">
+                                                <img src="./images/questions/toClose.webp" alt="It is close-button" />
+                                            </a>
+                                            <div class="popup-title">
+                                                <p>Чи надаєте ви послуги підтримки та обслуговування після запуску сайту?</p>
+                                            </div>
+                                            <div class="popup-text">
+                                                <p>
+                                                    <i>
+                                                        Так, ми пропонуємо різні плани підтримки та обслуговування, щоб ваш сайт завжди залишався
+                                                        актуальним, безпечним та ефективним.
+                                                    </i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------>
+                                <div class="item">
+                                    <div class="question-block">
+                                        <a href="#popup-3" class="box-button">
+                                            <div class="three-circles">
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                            </div>
+                                            <p class="text-questions">Чи можу я вносити зміни в дизайн під час розробки?</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="answer-block" id="popup-3">
+                                        <div class="popup-content">
+                                            <a href="#questions-section" class="popup-close">
+                                                <img src="./images/questions/toClose.webp" alt="It is close-button" />
+                                            </a>
+                                            <div class="popup-title">
+                                                <p>Чи можу я вносити зміни в дизайн під час розробки?</p>
+                                            </div>
+                                            <div class="popup-text">
+                                                <p>
+                                                    <i>Так, ми завжди відкриті до вашого фідбеку та пропозицій на всіх етапах розробки.</i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------>
+                                <div class="item">
+                                    <div class="question-block">
+                                        <a href="#popup-4" class="box-button">
+                                            <div class="three-circles">
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                            </div>
+                                            <p class="text-questions">Чи можу я внести зміни до дизайну чи контенту сайту після його запуску?</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="answer-block" id="popup-4">
+                                        <div class="popup-content">
+                                            <a href="#questions-section" class="popup-close">
+                                                <img src="./images/questions/toClose.webp" alt="It is close-button" />
+                                            </a>
+                                            <div class="popup-title">
+                                                <p>Чи можу я внести зміни до дизайну чи контенту сайту після його запуску?</p>
+                                            </div>
+                                            <div class="popup-text">
+                                                <p>
+                                                    <i>
+                                                        Так, ви можете вносити зміни до вашого сайту. При необхідності, можемо допомогти з будь-якими
+                                                        змінами, від зміни контенту до повної зміни дизайну.
+                                                    </i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------>
+                                <div class="item">
+                                    <div class="question-block">
+                                        <a href="#popup-5" class="box-button">
+                                            <div class="three-circles">
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                            </div>
+                                            <p class="text-questions">Чи оптимізуєте ви сайти для мобільних пристроїв та пошукових систем?</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="answer-block" id="popup-5">
+                                        <div class="popup-content">
+                                            <a href="#questions-section" class="popup-close">
+                                                <img src="./images/questions/toClose.webp" alt="It is close-button" />
+                                            </a>
+                                            <div class="popup-title">
+                                                <p>Чи оптимізуєте ви сайти для мобільних пристроїв та пошукових систем?</p>
+                                            </div>
+                                            <div class="popup-text">
+                                                <p>
+                                                    <i>
+                                                        Так, усі наші сайти оптимізовані для мобільних пристроїв та пошукових систем, щоб забезпечити
+                                                        максимальну доступність та зручність для користувачів.
+                                                    </i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------>
+                                <div class="item">
+                                    <div class="question-block">
+                                        <a href="#popup-6" class="box-button">
+                                            <div class="three-circles">
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                            </div>
+                                            <p class="text-questions">Як відбувається процес розробки сайту?</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="answer-block" id="popup-6">
+                                        <div class="popup-content">
+                                            <a href="#questions-section" class="popup-close">
+                                                <img src="./images/questions/toClose.webp" alt="It is close-button" />
+                                            </a>
+                                            <div class="popup-title">
+                                                <p>Як відбувається процес розробки сайту?</p>
+                                            </div>
+                                            <div class="popup-text">
+                                                <p>
+                                                    <i>
+                                                        Наш процес включає декілька ключових етапів: планування, дизайн, розробка, тестування та
+                                                        запуск. На кожному етапі ми тісно співпрацюємо з вами, щоб забезпечити відповідність кінцевого
+                                                        продукту вашим очікуванням. Ми також забезпечуємо постійну підтримку та оновлення.
+                                                    </i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------>
+                                <div class="item">
+                                    <div class="question-block">
+                                        <a href="#popup-7" class="box-button">
+                                            <div class="three-circles">
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                            </div>
+                                            <p class="text-questions">Чи можу я бачити прогрес мого проекту під час розробки?</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="answer-block" id="popup-7">
+                                        <div class="popup-content">
+                                            <a href="#questions-section" class="popup-close">
+                                                <img src="./images/questions/toClose.webp" alt="It is close-button" />
+                                            </a>
+                                            <div class="popup-title">
+                                                <p>Чи можу я бачити прогрес мого проекту під час розробки?</p>
+                                            </div>
+                                            <div class="popup-text">
+                                                <p>
+                                                    <i>
+                                                        Так, ми забезпечуємо прозорість на всіх етапах розробки і регулярно надаємо вам оновлення про
+                                                        статус вашого проекту.
+                                                    </i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------>
+                                <div class="item">
+                                    <div class="question-block">
+                                        <a href="#popup-8" class="box-button">
+                                            <div class="three-circles">
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                            </div>
+                                            <p class="text-questions">Чи допоможете ви з реєстрацією доменного імені та хостингом?</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="answer-block" id="popup-8">
+                                        <div class="popup-content">
+                                            <a href="#questions-section" class="popup-close">
+                                                <img src="./images/questions/toClose.webp" alt="It is close-button" />
+                                            </a>
+                                            <div class="popup-title">
+                                                <p>Чи допоможете ви з реєстрацією доменного імені та хостингом?</p>
+                                            </div>
+                                            <div class="popup-text">
+                                                <p>
+                                                    <i>
+                                                        Так, ми можемо допомогти вам із вибором та реєстрацією доменного імені, а також забезпечити
+                                                        надійні опції хостингу для вашого вебсайту.
+                                                    </i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------>
+                                <div class="item item-desktop">
+                                    <div class="question-block">
+                                        <a href="#popup-9" class="box-button">
+                                            <div class="three-circles">
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                            </div>
+                                            <p class="text-questions">Як ви забезпечуєте безпеку вебсайту?</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="answer-block" id="popup-9">
+                                        <div class="popup-content">
+                                            <a href="#questions-section" class="popup-close">
+                                                <img src="./images/questions/toClose.webp" alt="It is close-button" />
+                                            </a>
+                                            <div class="popup-title">
+                                                <p>Як ви забезпечуєте безпеку вебсайту?</p>
+                                            </div>
+                                            <div class="popup-text">
+                                                <p>
+                                                    <i>
+                                                        Ми використовуємо сучасні методи шифрування та безпеки, а також забезпечуємо регулярні
+                                                        оновлення безпеки після запуску вебсайту. Підключаємо перевірені сертифікати, та безпечний
+                                                        хостинг.
+                                                    </i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------------------------------>
+                                <div class="item item-desktop">
+                                    <div class="question-block">
+                                        <a href="#popup-10" class="box-button">
+                                            <div class="three-circles">
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                                <span class="circle"></span>
+                                            </div>
+                                            <p class="text-questions">Як ви забезпечуєте SEO-оптимізацію вебсайту?</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="answer-block" id="popup-10">
+                                        <div class="popup-content">
+                                            <a href="#questions-section" class="popup-close">
+                                                <img src="./images/questions/toClose.webp" alt="It is close-button" />
+                                            </a>
+                                            <div class="popup-title">
+                                                <p>Як ви забезпечуєте SEO-оптимізацію вебсайту?</p>
+                                            </div>
+                                            <div class="popup-text">
+                                                <p>
+                                                    <i>
+                                                        Ми інтегруємо SEO-стратегії на етапі планування та розробки, забезпечуючи оптимізацію
+                                                        контенту, структури сайту, мета-тегів та ін.
+                                                    </i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="team">
+                        <div class="container">
+                            <h2>Команда</h2>
+                            <div class="swiper teamSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="item">
+                                            <img src="./images/team/Vitalik.webp" alt="Vitalik.webp" />
+                                            <h3>Віталій</h3>
+                                            <p>Founder</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item">
+                                            <img src="./images/team/Oksana.webp" alt="Oksana.webp" />
+                                            <h3>Оксана</h3>
+                                            <p>Developer</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item">
+                                            <img class="img-destop" src="./images/team/Oleg.webp" alt="Oleg.webp" />
+                                            <h3 class="text-destop">Олег</h3>
+                                            <p class="text-destop">Team Lead</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item">
+                                            <img class="img-destop" src="./images/team/Olya.webp" alt="Olya.webp" />
+                                            <h3 class="text-destop">Ольга</h3>
+                                            <p class="text-destop">Project Manager</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item">
+                                            <img src="./images/team/Ihor.webp" alt="Ihor.webp" />
+                                            <h3>Ігор</h3>
+                                            <p>Developer</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item">
+                                            <img src="./images/team/Yana.webp" alt="Yana.webp" />
+                                            <h3>Яна</h3>
+                                            <p>UI/UX Designer</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item">
+                                            <img src="./images/team/anonym.webp" alt="anonym.webp" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination teamSwiper-pagination"></div>
+                            </div>
+                            <div class="icon">
+                                <div class="language-block">
+                                    <p class="mobile">Figma</p>
+                                    <pre
+                                        class="mobile"
+                                    ><span class="icon-figma"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span></pre>
+                                </div>
+                                <div class="language-block">
+                                    <p class="mobile">JavaScript</p>
+                                    <pre
+                                        class="mobile"
+                                    ><span class="icon-JS"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></pre>
+                                </div>
+                                <div class="language-block">
+                                    <p>HTML5</p>
+                                    <pre><span class="icon-html5"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span></pre>
+                                </div>
+                                <div class="language-block">
+                                    <p>CSS</p>
+                                    <pre><span class="icon-css"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></pre>
+                                </div>
+                                <div class="language-block">
+                                    <p>Trello</p>
+                                    <pre><span class="icon-trello"></span></pre>
+                                </div>
+                                <div class="language-block">
+                                    <p>GitHub</p>
+                                    <pre><span class="icon-GitHub"></span></pre>
+                                </div>
+                                <div class="language-block">
+                                    <p>Google Docs</p>
+                                    <pre><span class="icon-google"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span></span></pre>
+                                </div>
+                                <div class="language-block">
+                                    <p>PHP</p>
+                                    <pre><span class="icon-php"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span></span></pre>
+                                </div>
+                                <div class="language-block">
+                                    <p class="mobile">NodeJS</p>
+                                    <pre
+                                        class="mobile"
+                                    ><span class="icon-nodejs"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span></span></pre>
+                                </div>
+                                <div class="language-block">
+                                    <p class="mobile">Wordpress</p>
+                                    <pre class="mobile"><span class="icon-web"></span></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slider-block">
+                    <div id="contacts">
+                        <div class="container">
+                            <div class="column">
+                                <h3>Ваша ідея, наше втілення - ми створюємо цифрові враження!</h3>
+                                <p>Напишіть нам про про вашу ідею, і ми допоможемо її реалізувати</p>
+                                <form action="#">
+                                    <div class="display-flex">
+                                        <div class="left-column">
+                                            <div class="input">
+                                                <input class="input-people" type="text" name="name" placeholder="Імʼя" required />
+                                            </div>
+                                            <div class="input">
+                                                <input
+                                                    class="input-phone"
+                                                    type="tel"
+                                                    name="phone"
+                                                    placeholder="Телефон"
+                                                    maxlength="13"
+                                                    oninput="this.value = this.value.replace(/[^+0-9]/g, '')"
+                                                    required
+                                                />
+                                            </div>
+                                            <div class="input">
+                                                <input class="input-email" type="email" name="email" placeholder="E-mail" required />
+                                            </div>
+                                        </div>
+                                        <div class="right-column">
+                                            <div class="input">
+                                                <textarea name="comment" placeholder="Залишити коментар"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button-flex">
+                                        <button class="button-request" type="submit">
+                                            Надіслати заявку
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="column">
+                                <div class="contacts-block">
+                                    <div class="title">
+                                        <a href="https://forms.gle/Zgw4zsihpEXXW9Q79" target="_blank">
+                                            <div class="text">Карʼєра в компанії</div>
+                                        </a>
+                                        <a href="https://forms.gle/jfWcbpyYoSSYW1Nu5" target="_blank">
+                                            <div class="text">Партнерство</div>
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <div class="text">Договір</div>
+                                        </a>
+                                    </div>
+                                    <div class="title">
+                                        <a href="tel:+380685356767">
+                                            38 068 535 67 67
+                                            <p class="icon-phone link"></p>
+                                        </a>
+                                        <a class="massanges" href="mailto:pxl.vn.ua@gmail.com">
+                                            pxl.vn.ua@gmail.com
+                                            <p class="icon-email link"></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="payment-methods">
+                                    <div class="icon">
+                                        <pre><span class="icon-Master-card"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span><span class="path21"></span><span class="path22"></span><span class="path23"></span><span class="path24"></span><span class="path25"></span><span class="path26"></span><span class="path27"></span></span></pre>
+                                    </div>
+                                    <div class="icon">
+                                        <pre><span class="icon-PayPal"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></pre>
+                                    </div>
+                                    <div class="icon">
+                                        <pre><span class="icon-Visa"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="copirights">©  2024. ALL RIGHTS RESERVED. CREATED BY PXL</p>
+                    </div>
+                </div>
+            </div>
+            <div id="main" class="swiper-pagination main-pagination"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,996 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+    --bg-light: #fff;
+    --bg_button: #25D366;
+    --bg_button-hov: #15a248;
+    --bg-item: #F5F5F5;
+    --bg-cards: #F9F9F9;
+    --bg-tbl-el: #CFFFD4;
+    --text-button: #fff;
+    --text-dark: #000;
+    --for-form: #8B8B8B;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-dark);
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.green-button {
+    width: 361px;
+    height: 72px;
+    border-radius: 12px;
+    border: 0px;
+    background-color: var(--bg_button);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--text-button);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.green-button:hover,
+.green-button:active {
+    background-color: var(--bg_button-hov);
+}
+
+.limit-size {
+    max-width: 1500px;
+    padding: 16px;
+}
+
+
+/*-------------- form-block start --------------*/
+.form-block {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-block form input {
+    min-width: 361px;
+    height: 56px;
+    border: 1px solid var(--for-form);
+    border-radius: 8px;
+    color: var(--for-form);
+    font-family: Montserrat;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+    padding: 0 0 0 24px;
+}
+
+.form-block form input:nth-child(4) {
+    margin: 0 0 20px 0;
+}
+
+
+
+/*-------------- subtitle-block start --------------*/
+
+.subtitle-block {
+    margin: 52px 0 32px 0;
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    align-self: self-start;
+}
+
+.subtitle-block .elem1 {
+    flex-direction: row;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.subtitle-block .elem1 img {
+    margin: 0 4px 0 0;
+}
+
+.subtitle-block .elem2 h3 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: -1px;
+}
+
+
+
+
+
+/*================= mobile version ====================*/
+
+.wrapper {
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/*-------------- header --------------*/
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .links-block,
+#header .member {
+    display: none;
+}
+
+#header .logo {
+    margin: 16px 0 30px 0;
+}
+
+
+/*-------------- intro --------------*/
+#intro {
+    margin: 0 auto;
+}
+
+#intro .title-block {
+    padding: 16px;
+    font-family: Montserrat;
+    text-align: center;
+}
+
+#intro .title-block h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+#intro .title-block h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 20px 0 50px 0;
+}
+
+#intro .video-block {
+    width: 100%;
+    max-width: 800px;
+    background-image: url(../img/bg-rectangle_mob.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    padding: 10px 0 7px 0;
+    margin: 0 auto 28px auto;
+}
+
+#intro .video-block iframe {
+    width: 100%;
+    height: auto;
+    min-height: 216px;
+    border-radius: 8px;
+}
+
+#intro .sm-cards-block {
+    display: ruby-text;
+    padding: 16px;
+    margin: 27px auto 40px auto;
+}
+
+#intro .form-block {
+    text-align: center;
+}
+
+#intro .sm-cards-block .card-item {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bg-gray-corner-small_mob.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 104px;
+    margin: 0 0px 12px 0;
+    text-align: center;
+}
+
+#intro .sm-cards-block .card-item .sum {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 32px;
+}
+
+
+/*------------ partners --------------*/
+#partners .container {
+    min-height: 224px;
+    background-image: url(../img/bg-dark-partner_mob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: list-item;
+    align-content: center;
+    text-align: center;
+}
+
+#partners .container img {
+    margin: 32px 50px 32px 30px;
+}
+
+#partners .container img:nth-child(1) {
+    width: 87px;
+}
+
+#partners .container img:nth-child(2) {
+    width: 120px;
+}
+
+#partners .container img:nth-child(3) {
+    width: 140px;
+}
+
+#partners .container img:nth-child(4) {
+    width: 70px;
+}
+
+
+/*-------------- advantages --------------*/
+#advantages {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#advantages .big-cards-block {
+    display: ruby;
+}
+
+#advantages .big-cards-block .item {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-image: url(../img/bg-gray-corner-big_mob.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 361px;
+    height: 282px;
+    border-radius: 8px;
+    padding: 0px 20px;
+}
+
+#advantages .big-cards-block .item:nth-child(2) {
+    margin: 16px 0 16px 0;
+}
+
+#advantages .big-cards-block .item img {
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    background-color: var(--bg_button);
+    padding: 16px;
+}
+
+#advantages .big-cards-block .item h4 {
+    margin: 8px 0 12px 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+#advantages .big-cards-block .item p {
+    min-height: 120px;
+}
+
+#advantages .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#advantages .container .image-block {
+    width: 279px;
+    height: 388px;
+    background-image: url(../img/img-mobile_mob.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 40px 0 24px 0;
+}
+
+#advantages .container .earning-block {
+    text-align: center;
+}
+
+#advantages .container .earning-block h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    margin: 0 0 30px 0;
+}
+
+#advantages .container .earning-block h4 span {
+    font-weight: 400;
+}
+
+#advantages .earning-block .icons-block {
+    display: none;
+}
+
+
+/*-------------- calculator --------------*/
+#calculator {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+#calculator .grey-item {
+    width: 361px;
+    height: 72px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--bg-item);
+    border-radius: 12px;
+    margin: 0 0 4px 0;
+    padding: 0 24px;
+}
+
+#calculator .result {
+    margin: 24px 0 25px 0;
+    flex-direction: row;
+}
+
+#calculator .result .sum-result {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 0 16px;
+}
+
+#calculator table {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+#calculator .table-block .table-row th {
+    font-weight: 400;
+    padding: 0 0 0px 0;
+    text-align: start;
+}
+
+#calculator .table-block .table-row th:nth-child(2) {
+    padding: 0px 90px 0px 90px;
+}
+
+#calculator .table-block .table-row th:nth-child(3) {
+    background-color: var(--bg-tbl-el);
+    border-radius: 8px;
+    padding: 0px 6px 4px 6px;
+    line-height: 26px;
+}
+
+
+/*-------------- reviews --------------*/
+#reviews .item-block {
+    background-color: var(--bg-cards);
+    border-radius: 8px;
+    margin: 0 0 8px 0;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#reviews .item-block p:nth-child(1) {
+    padding: 16px;
+}
+
+#reviews .item-block .who-is {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 4px 16px 16px 16px;
+}
+
+#reviews .item-block .who-is .name {
+    text-align: start;
+    margin: 0 0 0 32px;
+}
+
+#reviews .item-block .who-is .name h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 0 6px 0;
+}
+
+
+/*-------------- registration/ footer  --------------*/
+#registration {
+    background-image: url(../img/bg-dark-footer_mob.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#registration .subtitle-block {
+    padding: 48px 16px 0 16px;
+    margin: 24px 0 32px 0;
+    color: var(--text-button);
+}
+
+#registration .form-block {
+    padding: 16px;
+}
+
+#registration .container-bl .links-block .link-item {
+    text-align: center;
+    margin: 34px 0 0 0;
+}
+
+#registration .container-bl .links-block .link-item a {
+    text-decoration: none;
+    color: var(--text-button);
+    cursor: pointer;
+}
+
+#registration .container-bl .social-block {
+    margin: 42px 0 51px 0;
+    text-align: center;
+}
+
+#registration .container-bl .social-block a:nth-child(2) {
+    margin: 0 56px;
+}
+
+#registration .container-bl .logo {
+    text-align: center;
+    padding: 0 0 38px 0;
+}
+
+#registration .container-bl .logo a img {
+    width: 176px;
+}
+
+/*----------------------------------------------------*/
+
+
+
+
+
+/*===================== @ media =====================*/
+@media (min-width: 768px) {
+
+    /*-------------- intro --------------*/
+    #intro .video-block iframe {
+        min-height: 400px;
+    }
+
+    #intro .sm-cards-block .card-item:nth-child(2) {
+        margin: 0 20px 0px 20px;
+    }
+
+
+    /*-------------- reviews --------------*/
+    #reviews {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #reviews .subtitle-block .elem2 h3 {
+        text-align: start;
+    }
+
+    #reviews .item-block {
+        margin: 8px;
+        width: 344px;
+        display: inline-grid;
+    }
+
+
+    /*-------------- advantages --------------*/
+    #advantages .big-cards-block .item:nth-child(2) {
+        margin: 0px 16px 16px 16px;
+    }
+}
+
+
+
+
+/*----------------------------------------------------*/
+@media (min-width: 1024px) {
+    .subtitle-block {
+        margin: 104px 0 72px 0;
+    }
+
+    .subtitle-block .elem1 p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .subtitle-block .elem2 h3 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+
+    /*-------------- header --------------*/
+    #header .links-block,
+    #header .member {
+        display: unset;
+    }
+
+    #header {
+        max-width: 1500px;
+        justify-content: space-between;
+        margin: 70px auto 48px auto;
+    }
+
+    #header .logo {
+        margin: 0;
+    }
+
+    #header .links-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header .links-block .link-item {
+        text-align: center;
+        margin: 0px 0 0 0;
+    }
+
+    #header .links-block .link-item a {
+        text-decoration: none;
+        color: var(--text-dark);
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    #header .links-block .link-item:nth-child(2) {
+        margin: 0 22px;
+    }
+
+    #header .member {
+        background-image: url(../img/button-rectangle.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 287px;
+        height: 50px;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: Montserrat;
+        text-transform: uppercase;
+    }
+
+    #header .member a {
+        text-decoration: none;
+        color: var(--text-button);
+    }
+
+
+    /*-------------- intro --------------*/
+    #intro {
+        margin: 0 auto;
+    }
+
+    #intro .title-block h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    #intro .title-block h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+    /*-------------- advantages --------------*/
+    #advantages {
+        margin: 0 auto;
+    }
+
+    #advantages .container {
+        flex-direction: row;
+        margin: 80px 0 0 0;
+    }
+
+    #advantages .container .image-block {
+        background-image: url(../img/img-mobile_desk.png);
+        order: 3;
+        margin: 0;
+    }
+
+    #advantages .container .earning-block {
+        width: 50%;
+        order: 1;
+    }
+
+    #advantages .container .earning-block .icons-block {
+        display: unset;
+    }
+
+    #advantages .container .earning-block .icons-block a {
+        margin: 36px;
+        text-decoration: none;
+    }
+
+    #advantages .container .earning-block .icons-block a img {
+        width: 18%;
+        margin: 36px 5px 36px 5px;
+    }
+
+
+    /*-------------- calculator --------------*/
+    #calculator {
+        margin: 0 auto;
+    }
+
+    #calculator .container-blocks {
+        display: flex;
+    }
+
+    #calculator .container-blocks .grey-item {
+        width: 451px;
+        margin: 0 -15px 0px 0;
+    }
+
+    #calculator .result {
+        width: 800px;
+    }
+
+    #calculator .table-block .table-row th:nth-child(2) {
+        padding: 0 140px 0px 140px;
+    }
+
+
+    /*-------------- registration/ footer  --------------*/
+    #registration {
+        background-image: url(../img/bg-dark-footer_desk.jpg);
+        padding: 0 16px 0 16px;
+    }
+
+    #registration .subtitle-block,
+    #registration .form-block {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    #registration .subtitle-block {
+        padding: 66px 0 121px 0;
+    }
+
+    #registration .form-block form {
+        display: flex;
+        flex-direction: column;
+        width: 472px;
+        margin: 0 auto;
+    }
+
+    #registration .form-block .green-button {
+        margin: 0 auto;
+    }
+
+    #registration .container-bl {
+        max-width: 1500px;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0px;
+        margin: 0 auto;
+    }
+
+    #registration .container-bl .links-block {
+        display: flex;
+        order: 2;
+    }
+
+    #registration .container-bl .links-block .link-item {
+        margin: 0 50px 0 0;
+    }
+
+    #registration .container-bl .social-block {
+        display: unset;
+        order: 3;
+        margin: 0px;
+    }
+
+    #registration .container-bl .social-block a:nth-child(2) {
+        margin: 0 30px;
+    }
+
+    #registration .container-bl .logo {
+        display: unset;
+        order: 0;
+        padding: 0px;
+    }
+}
+
+
+
+
+/*----------------------------------------------------*/
+@media (min-width: 1920px) {
+    .green-button {
+        width: 472px;
+        height: 96px;
+        font-size: 20px;
+    }
+
+    .form-block {
+        max-width: 520px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-block form input {
+        min-width: 472px;
+        height: 64px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .limit-size {
+        padding: 0;
+    }
+
+
+    /*-------------- header --------------*/
+    #header .links-block .link-item a {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    #header .links-block .link-item:nth-child(2) {
+        margin: 0 110px;
+    }
+
+    #header .member {
+        height: 64px;
+    }
+
+
+    /*-------------- intro --------------*/
+    #intro {
+        max-width: 1500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0 auto;
+        align-content: center;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #intro .title-block {
+        order: 1;
+        width: 52%;
+        display: inline-grid;
+        padding: 0;
+    }
+
+    #intro .title-block h1 {
+        text-align: start;
+        margin: 0 0 0px 0;
+    }
+
+    #intro .title-block h2 {
+        text-align: start;
+        margin: 10px 0 0px 0;
+    }
+
+    #intro .form-block {
+        order: 3;
+        display: inline-grid;
+        margin: -240px 0px 0 -30px;
+    }
+
+    #intro .video-block {
+        max-width: 720px;
+        display: inline-grid;
+        order: 2;
+        margin: 100px 0 0 auto;
+    }
+
+    #intro .sm-cards-block {
+        display: flex;
+        order: 4;
+        margin: 42px 0 100px 75px;
+        padding: 0;
+    }
+
+    #intro .sm-cards-block .card-item {
+        background-image: url(../img/bg-gray-corner-small_desk.png);
+        width: 296px;
+        height: 120px;
+        border-radius: 8px;
+    }
+
+    #intro .sm-cards-block .card-item p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    #intro .sm-cards-block .card-item .sum {
+        font-size: 28px;
+    }
+
+
+    /*------------ partners --------------*/
+    #partners .container {
+        min-height: 320px;
+        background-image: url(../img/bg-dark-partner_desk.jpg);
+    }
+
+    #partners .container img {
+        margin: 32px 80px 32px 80px;
+    }
+
+    #partners .container img:nth-child(1) {
+        width: 160px;
+    }
+
+    #partners .container img:nth-child(2) {
+        width: 178px;
+    }
+
+    #partners .container img:nth-child(3) {
+        width: 210px;
+    }
+
+    #partners .container img:nth-child(4) {
+        width: 105px;
+    }
+
+
+    /*-------------- advantages --------------*/
+
+    #advantages .big-cards-block .item {
+        background-image: url(../img/bg-gray-corner-big_desk.png);
+        width: 475px;
+        height: 314px;
+        border-radius: 12px;
+    }
+
+    #advantages .big-cards-block .item h4 {
+        font-size: 22px;
+    }
+
+    #advantages .big-cards-block .item p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    #advantages .container {
+        justify-content: space-between;
+    }
+
+    #advantages .container .earning-block {
+        width: unset;
+    }
+
+    #advantages .container .earning-block h4 {
+        font-size: 32px;
+        line-height: 40px;
+        margin: 25px 0 30px 0;
+    }
+
+    #advantages .container .image-block {
+        width: 481px;
+        height: 746px;
+    }
+
+    #advantages .container .earning-block .icons-block a img {
+        width: unset;
+        margin: 36px 5px 68px 5px;
+    }
+
+    #advantages .container .earning-block .green-button {
+        width: 400px;
+    }
+
+
+    /*-------------- calculator --------------*/
+    #calculator .grey-item {
+        height: 96px;
+        font-size: 24px;
+        padding: 0 44px;
+    }
+
+    #calculator .grey-item p {
+        font-size: 24px;
+    }
+
+    #calculator .result {
+        margin: 32px 0 44px 0;
+    }
+
+    #calculator .result .sum-result {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    #calculator .container-blocks .green-button {
+        width: 316px;
+    }
+
+    #calculator .container-blocks .grey-item {
+        width: 500px;
+    }
+
+    #calculator .table-block .table-row th {
+        font-size: 24px;
+    }
+
+
+    /*-------------- reviews --------------*/
+    #reviews {
+        margin: 0 auto 104px auto;
+    }
+
+
+    /*-------------- registration/ footer  --------------*/
+    #registration {
+        padding: 0;
+    }
+
+    #registration .form-block form input {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 16px 0;
+    }
+
+    #registration .form-block .green-button {
+        margin: 0 auto;
+        height: 72px;
+        width: 472px;
+    }
+
+    #registration .container-bl {
+        padding: 214px 0px 50px 0px;
+    }
+
+    #registration .container-bl .links-block .link-item:nth-child(2) {
+        margin: 0 108px 0 108px;
+    }
+
+    #registration .container-bl .links-block .link-item a {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    #registration .container-bl .social-block a:nth-child(2) {
+        margin: 0 80px;
+    }
+
+    #registration .container-bl .logo a img {
+        width: 263px;
+    }
+}

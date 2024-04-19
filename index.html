@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Bot</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/jquery-3.7.1.min.js"></script>
+    <script src="./src/js/script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header" class="limit-size">
+            <div class="logo">
+                <img src="./src/img/logo_desk.png" alt="">
+            </div>
+
+            <div class="links-block">
+                <div class="link-item">
+                    <a href="#advantages">Преимущества</a>
+                </div>
+                <div class="link-item">
+                    <a href="#calculator">Калькулятор доходности</a>
+                </div>
+                <div class="link-item">
+                    <a href="#reviews">Отзывы</a>
+                </div>
+            </div>
+
+            <button class="member"><a href="#leadform1">стать участником</a></button>
+        </header>
+
+        <main>
+            <section id="intro" class="limit-size">
+                <div class="title-block">
+                    <h1>Подключитесь к проекту <br> <b> Марка Цукерберга</b> и зарабатывайте <b> от 4000 EUR
+                            ежемесячно!</b>
+                    </h1>
+                    <h2>Автоматизированная система торговли на базе искусственного интеллекта</h2>
+                </div>
+
+                <div class="video-block">
+                    <iframe src="https://www.youtube.com/embed/BtuOJfbsKl0" frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="form-block">
+                    <form action="/send/send.php" method="POST" id="leadform1">
+
+                        <input type="text" class="formInput" placeholder="Имя" id="fname" name="fname" required />
+
+                        <input type="text" class="formInput" placeholder="Фамилия" id="lname" name="lname" required />
+
+                        <input type="tel" placeholder="" class="formInput" id="phone" name="phone" required />
+
+                        <input type="email" class="formInput" placeholder="Email:" id="email" name="email" required />
+
+                        <button type="submit" class="formButton green-button">
+                            Зарегистрироваться
+                        </button>
+                    </form>
+                </div>
+
+                <div class="sm-cards-block">
+                    <div class="card-item">
+                        <p class="text">Заработано с нами за 24ч:</p>
+                        <p class="sum">1,830,837.94$</p>
+                    </div>
+
+                    <div class="card-item">
+                        <p class="text">Инвестировано в нас за 24ч:</p>
+                        <p class="sum">4,232,583.23$</p>
+                    </div>
+
+                    <div class="card-item">
+                        <p class="text">Выведено за 24ч:</p>
+                        <p class="sum">921,353.77$</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="partners">
+                <div class="container">
+                    <img src="./src/img/partner_bitMex.png" alt="Logo BitMex">
+                    <img src="./src/img/partner_binance.png" alt="Logo Binance">
+                    <img src="./src/img/partner_cryptoCom.png" alt="Logo crypto.com">
+                    <img src="./src/img/partner_KuCoin.png" alt="Logo KuCoin">
+                </div>
+            </section>
+
+
+            <section id="advantages" class="limit-size">
+                <div class="subtitle-block">
+                    <div class="elem1">
+                        <img src="./src/img/title-rectangle_mob.png" alt="Rectangle">
+                        <p class="text">Подробнее о продукте компании</p>
+                    </div>
+                    <div class="elem2">
+                        <h3>Преимущества инвестирования с WhatsApp Bot</h3>
+                    </div>
+                </div>
+
+                <div class="big-cards-block">
+                    <div class="item">
+                        <img src="./src/img/icon-1.png" alt="icon-1">
+                        <h4>Низкий порог входа</h4>
+                        <p>Вы можете начать свой инвестиционный путь с небольшой суммы в 200 EUR, благодаря низкому
+                            порогу входа.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="./src/img/icon-2.png" alt="icon-2">
+                        <h4>Полная автоматизация</h4>
+                        <p>Автоматизация всех процессов при помощи искуственного интелеката делает возможным получение
+                            высокой прибыли, даже без опыта в инвестировании.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="./src/img/icon-3.png" alt="icon-3">
+                        <h4>Быстрый старт</h4>
+                        <p>Начните зарабатывать в течение первой недели и получайте выплаты на свою карту, без взыскания
+                            скрытых комиссий и дополнительных сборов.</p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="image-block"></div>
+
+                    <div class="earning-block">
+                        <h4>WhatsApp Bot– <span class="not-bold">новейшая разработка, <br>доступная на всех устройствах,
+                                включая
+                                телефон.</span></h4>
+                        <h4>Приложение скачало более 100 тысяч пользователей!</h4>
+
+                        <div class="icons-block">
+                            <a href="#">
+                                <img src="./src/img/icons/windows.png" alt="Icon windows">
+                            </a>
+
+                            <a href="#">
+                                <img src="./src/img/icons/gool-play.png" alt="Icon gool-play">
+                            </a>
+
+                            <a href="#">
+                                <img src="./src/img/icons/app-store.png" alt="Icon app-store">
+                            </a>
+                        </div>
+
+                        <button class="green-button">начать зарабатывать</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="calculator" class="limit-size">
+                <div class="subtitle-block">
+                    <div class="elem1">
+                        <img src="./src/img/title-rectangle_mob.png" alt="Rectangle">
+                        <p class="text">Ваш доход после регистрации</p>
+                    </div>
+                    <div class="elem2">
+                        <h3>Калькулятор прибыльности</h3>
+                    </div>
+                </div>
+
+                <div class="container-blocks">
+                    <p class="grey-item">Введите желаемый депозит в $</p>
+
+                    <button class="calculate green-button">рассчитать</button>
+                </div>
+
+                <div class="result grey-item">
+                    <p>Вы заработаете:</p>
+                    <p class="sum-result">+10326.75$</p>
+                </div>
+
+                <div class="table-block">
+                    <table>
+                        <tbody>
+                            <tr class="table-row">
+                                <th>BTC</th>
+                                <th>+0.00$</th>
+                                <th>+22.7%</th>
+                            </tr>
+                            <tr class="table-row">
+                                <th>NKE</th>
+                                <th>+0.00$</th>
+                                <th>+22.7%</th>
+                            </tr>
+                            <tr class="table-row">
+                                <th>ETH</th>
+                                <th>+0.00$</th>
+                                <th>+22.7%</th>
+                            </tr>
+                            <tr class="table-row">
+                                <th>AMCX</th>
+                                <th>+0.00$</th>
+                                <th>+22.7%</th>
+                            </tr>
+                            <tr class="table-row">
+                                <th>SNP500</th>
+                                <th>+0.00$</th>
+                                <th>+22.7%</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <section id="reviews" class="limit-size">
+                <div class="subtitle-block">
+                    <div class="elem1">
+                        <img src="./src/img/title-rectangle_mob.png" alt="Rectangle">
+                        <p class="text">Что думают пользоватили</p>
+                    </div>
+                    <div class="elem2">
+                        <h3>Отзывы о проекте WhatsApp Bot</h3>
+                    </div>
+                </div>
+
+                <div class="item-block">
+                    <p>Я долго искал надежный способ заработать деньги в интернете, и наконец нашел автотрейдинг. Я
+                        просто настроил программу и оставил все на ее усмотрение. Уже через неделю я увидел, что мой
+                        доход увеличился. Я очень рад моему решению.</p>
+                    <div class="who-is">
+                        <img src="./src/img/review_TarasyukSergey.png" alt="TarasyukSergey">
+                        <div class="name">
+                            <h5>Тарасюк Сергей</h5>
+                            <p>04.01.2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-block">
+                    <p>Начал торговать недавно, но уже заметил, что трейдинг дает более высокий доход, чем банковские
+                        вклады. Рекомендую всем, кто хочет зарабатывать деньги!</p>
+                    <div class="who-is">
+                        <img src="./src/img/review_YarovoyLeonid.png" alt="YarovoyLeonid">
+                        <div class="name">
+                            <h5>Яровой Леонид</h5>
+                            <p>23.10.2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-block">
+                    <p>Я начала торговать с WhatsApp Bot как хобби, но теперь это стало основным источником дохода для
+                        меня.</p>
+                    <div class="who-is">
+                        <img src="./src/img/review_VishnyakovaYana.png" alt="VishnyakovaYana">
+                        <div class="name">
+                            <h5>Вишнякова Яна</h5>
+                            <p>15.01.2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-block">
+                    <p>Я никогда не думала, что смогу зарабатывать деньги так легко! Приложение позволяет мне
+                        контролировать свои финансы и получать доход даже во время экономической нестабильности. Я и моя
+                        жена благодарны компании WhatsApp Bot.</p>
+                    <div class="who-is">
+                        <img src="./src/img/review_TsvetkovaLarisa.png" alt="TsvetkovaLarisa">
+                        <div class="name">
+                            <h5>Цветкова Лариса</h5>
+                            <p>03.11.2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-block">
+                    <p>Я был немного скептически настроен к началу, но теперь я понимаю, что трейдинг - это отличный
+                        способ заработать деньги себе на жизнь, путишествия и развлечения.</p>
+                    <div class="who-is">
+                        <img src="./src/img/review_BykovPavel.png" alt="BykovPavel">
+                        <div class="name">
+                            <h5>Быков Павел</h5>
+                            <p>10.09.2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-block">
+                    <p>Немного волновался изначально, поэтому начинал с небольшой суммы. Сейчас же у меня и у моей жены
+                        два активных счета и стабильный заработок. Немного волновался изначально, поэтому начинал с
+                        небольшой суммы.</p>
+                    <div class="who-is">
+                        <img src="./src/img/review_KudryashovOleg.png" alt="KudryashovOleg">
+                        <div class="name">
+                            <h5>Кудряшов Олег</h5>
+                            <p>24.11.2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-block">
+                    <p>Я начал использовать автотрейдинг программу примерно месяц назад и доволен результатами. Мои
+                        инвестиции неожиданно начали приносить прибыль, и я не могу поверить, что все это происходит
+                        автоматически.</p>
+                    <div class="who-is">
+                        <img src="./src/img/review_DementievRuslan.png" alt="DementievRuslan">
+                        <div class="name">
+                            <h5>Дементьев Руслан</h5>
+                            <p>30.12.2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-block">
+                    <p>С помощью автотрейдинга я могу зарабатывать деньги, даже когда я на работе или отдыхе, это почти
+                        не занимает времени.</p>
+                    <div class="who-is">
+                        <img src="./src/img/review_SafonovaAlisa.png" alt="TarasyukSergey">
+                        <div class="name">
+                            <h5>Сафонова Алиса</h5>
+                            <p>21.01.2023</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+
+        <footer id="registration">
+            <div class="subtitle-block">
+                <div class="elem1">
+                    <img src="./src/img/title-rectangle_mob.png" alt="Rectangle">
+                    <p class="text">Получить доступ и начать зарабатывать</p>
+                </div>
+                <div class="elem2">
+                    <h3>Регистрация в приложении WhatsApp Bot</h3>
+                </div>
+            </div>
+
+            <div class="form-block">
+                <form action="/send/send.php" method="POST" id="leadform2">
+
+                    <input type="text" class="formInput" placeholder="Имя" id="fname2" name="fname" required />
+
+                    <input type="text" class="formInput" placeholder="Фамилия" id="lname2" name="lname" required />
+
+                    <input type="tel" placeholder="" class="formInput" id="phone2" name="phone" required />
+
+                    <input type="email" class="formInput" placeholder="Email:" id="email2" name="email" required />
+
+                    <button type="submit" class="formButton green-button">
+                        Зарегистрироваться
+                    </button>
+                </form>
+            </div>
+
+            <div class="container-bl">
+                <div class="links-block">
+                    <div class="link-item">
+                        <a href="#advantages">Преимущества</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="#calculator">Калькулятор доходности</a>
+                    </div>
+                    <div class="link-item">
+                        <a href="#reviews">Отзывы</a>
+                    </div>
+                </div>
+
+                <div class="social-block">
+                    <a href="#"><img src="./src/img/icons/linkedin.svg" alt="linkedin"></a>
+                    <a href="#"><img src="./src/img/icons/facebook.svg" alt="facebook"></a>
+                    <a href="#"><img src="./src/img/icons/instagram.svg" alt="instagram"></a>
+                </div>
+
+                <div class="logo">
+                    <a href="#header"><img src="./src/img/logo_desk.png" alt="logo"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
